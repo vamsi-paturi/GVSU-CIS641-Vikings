@@ -1,6 +1,6 @@
 # Team Name
 
-Project description (~1 paragraph)
+Vikings
 
 ## Team Members and Roles
 
