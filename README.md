@@ -1,4 +1,4 @@
-# Team Name
+# VIKINGS
 
 Project description (~1 paragraph)
 
