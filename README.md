@@ -2,7 +2,7 @@
 
 ## Team Members and Roles
 
-* Vamsi Paturi
+* [Vamsi Paturi](https://github.com/vamsi-paturi/CIS641-HW2-paturi)
 * [Venkata Madhav Thota](https://github.com/thotave/CIS641-HW2-THOTA)
 * Member 3 (Role 5, Role 6)
 
