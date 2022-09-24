@@ -1,7 +1,5 @@
 # VIKINGS
 
-Vikings
-
 ## Team Members and Roles
 
 * Vamsi Paturi
