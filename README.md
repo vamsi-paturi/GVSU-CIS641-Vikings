@@ -1,6 +1,4 @@
-# Team Name
-
-Vikings
+# VIKINGS
 
 ## Team Members and Roles
 
