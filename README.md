@@ -1,11 +1,11 @@
 # VIKINGS
 
-Project description (~1 paragraph)
+Vikings
 
 ## Team Members and Roles
 
 * Vamsi Paturi
-* Member 2 (Role 3, Role 4)
+* Venkata Madhav Thota
 * Member 3 (Role 5, Role 6)
 
 ## Prerequisites
