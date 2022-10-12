@@ -1,12 +1,12 @@
-# Team Name
-
-Project description (~1 paragraph)
+# VIKINGS
 
 ## Team Members and Roles
 
-* Member 1 (Role 1, Role 2)
-* Member 2 (Role 3, Role 4)
-* Member 3 (Role 5, Role 6)
+* [Vamsi Paturi](https://github.com/vamsi-paturi/CIS641-HW2-paturi)
+* [Venkata Madhav Thota](https://github.com/thotave/CIS641-HW2-THOTA)
+* [Dilip kumar Vavilapalli](https://github.com/DilipVavilapalli/CIS641-HW2-vavilapalli)
+* [Vaishnavi Prakash Rasane](https://github.com/VaishnaviRasane/CIS641-HW2-Rasane)
+
 
 ## Prerequisites
 
