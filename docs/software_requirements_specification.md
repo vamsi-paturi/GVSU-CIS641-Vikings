@@ -43,7 +43,8 @@ The software requirement specification document outlines the requirements of tea
 	2. The system shall store its entire user and post data in Sql Database.
 	3. The system shall be capable of handling multiple users at a time.
 
-3.      Security
+3.      Security: 
         1. The system shall provide security for employees’ personal data
         2. The system shall maintain confidentiality of employees’ salary details. 
+        
 
