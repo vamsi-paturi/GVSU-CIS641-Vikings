@@ -5,12 +5,12 @@ The software requirement specification document outlines the requirements of tea
 
 ### 2.1 Functional Requirements
 1.	Manage User Login:
-i.	Upon completion of page loading, the welcome screen shall display sign-inscreen and sign-up button for sign-up.
-ii.	Sign-up screen shall be displayed when the user presses the sign-up button.
-iii.	For sign-in user have to up the user detail (email and password).
+       1. Upon completion of page loading, the welcome screen shall display sign-inscreen and sign-up button for sign-up.
+       2. Sign-up screen shall be displayed when the user presses the sign-up button.
+       3.	For sign-in user have to up the user detail (email and password).
 2.	Mange Sign Up:
-i.	After clicking on sign up option, users details shall be captured like - name, email and home address.
-ii.	Sign-up form inputs shall be validated when the user presses submit button.
+       1. After clicking on sign up option, users details shall be captured like - name, email and home address.
+       2. Sign-up form inputs shall be validated when the user presses submit button.
 3.	Upload documents:
 i.	When users successfully login into the system there will be an option to upload your documents.
 ii.	When users clicks on upload the document button a new page will be open.
