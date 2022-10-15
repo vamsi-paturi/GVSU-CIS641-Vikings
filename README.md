@@ -9,10 +9,10 @@ For any organization, managing all the employees data and keeping a track of it 
 * [Vaishnavi Prakash Rasane](https://github.com/VaishnaviRasane/CIS641-HW2-Rasane) - Backend Developer / Document Designer
 
 ## Documents
-[Meetings](https://github.com/thotave/GVSU-CIS641-Vikings/tree/master/meetings)
-[Project Proposal](https://github.com/thotave/GVSU-CIS641-Vikings/blob/master/docs/proposal-template.md)
-[Project Artifacts](https://github.com/thotave/GVSU-CIS641-Vikings/tree/master/artifacts)
-[Software Requirement Specifications](https://github.com/thotave/GVSU-CIS641-Vikings/blob/master/docs/software_requirements_specification.md)
+* [Meetings](https://github.com/thotave/GVSU-CIS641-Vikings/tree/master/meetings)
+* [Project Proposal](https://github.com/thotave/GVSU-CIS641-Vikings/blob/master/docs/proposal-template.md)
+* [Project Artifacts](https://github.com/thotave/GVSU-CIS641-Vikings/tree/master/artifacts)
+* [Software Requirement Specifications](https://github.com/thotave/GVSU-CIS641-Vikings/blob/master/docs/software_requirements_specification.md)
 
 ## Run Instructions
 
