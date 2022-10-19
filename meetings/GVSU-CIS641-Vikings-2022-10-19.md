@@ -1,7 +1,7 @@
-#Meeting Minutes for week-4
-##Team name: Vikings
+# Meeting Minutes for week-4
+## Team name: Vikings
 
-###Members present: Madhav, Vamsi, Vaishnavi
+### Members present: Madhav, Vamsi, Vaishnavi
 
 Date: 10-19-2022
 
