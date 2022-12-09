@@ -1,26 +1,19 @@
-# CIS641 Meeting Instructions
+# VIKINGS
+For any organization, managing all the employees data and keeping a track of it manually is a time consuming process. In order to assist organization to locate specific employees' complete records within a business and to assist newly hired employees with the onboarding process, we are proposing to construct an Employee Management System,a web-based application. 
 
-Hold a team meeting at least once a week in some format.  Copy the following template below into a new document, naming it GVSU-CIS641-TEAMNAME-YYYY-MM-DD (replacing TEAMNAME with your team's name and the appropriate date fields).  Commit it to this folder, ensuring it is up by each Tuesday by 11:59pm.  There should be a unique document for each meeting held.
+## Team Members and Roles
 
-## Meeting minutes template
+* [Vamsi Paturi](https://github.com/vamsi-paturi/CIS641-HW2-paturi) - Front End Developer
+* [Venkata Madhav Thota](https://github.com/thotave/CIS641-HW2-THOTA) - Database Engineer/ Quality Analyst
+* [Dilip kumar Vavilapalli](https://github.com/DilipVavilapalli/CIS641-HW2-vavilapalli) - GUI Designer
+* [Vaishnavi Prakash Rasane](https://github.com/VaishnaviRasane/CIS641-HW2-Rasane) - Backend Developer / Document Designer
 
-Team name: vikings
+## Documents
+* [Meetings](https://github.com/thotave/GVSU-CIS641-Vikings/tree/master/meetings)
+* [Project Proposal](https://github.com/thotave/GVSU-CIS641-Vikings/blob/master/docs/proposal-template.md)
+* [Project Artifacts](https://github.com/thotave/GVSU-CIS641-Vikings/tree/master/artifacts)
+* [Software Requirement Specifications](https://github.com/thotave/GVSU-CIS641-Vikings/blob/master/docs/software_requirements_specification.md)
 
-Members present: Vamsi Paturi, Vaishanvi Rasane, Madhav Thota, Dilip Vavilapalli
-
-Date: 11/16/2022.
-
-Time:9:59 - 10:15
-
-Discussion points: 
-
-* As discussed in the previous week we have resolved all the issues with the help of all the team members.
-* Resolved all the issues in the backend as well as front end.
-* All the team members are woking on front end tasks and trying to achieve our goals Asap.
-
-Goals for next week (include responsibilities)
-
-* To finish the Application before the deadline.
-* To create the code without errors and complete the Application with the help of our team Members.
+## Run Instructions
 
 
