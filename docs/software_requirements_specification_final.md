@@ -16,7 +16,7 @@ Non-functional requirement section provides a user expectation and applies to wh
 | FR1 | Upon completion of page loading, the welcome screen shall display sign-inscreen and sign-up button for sign-up.|
 | FR2 |  Sign-up screen shall be displayed when the user presses the sign-up button. |
 | FR3 | For sign-in user have to up the user detail (email and password)  |
-| FR4 | |
+| FR4 | Admin shall be able to login using email and password |
 
 ### Sign Up/User Registration:
 
@@ -118,26 +118,34 @@ Non-functional requirement section provides a user expectation and applies to wh
 # Change management plan
 
 <Description of what this section is>
+<>
+## How will you train people to use it?
+  <> 
+## How will you ensure it integrates within their ecosystem / software?
+<>
+##How will you ensure that it any discovered issues are resolved?
+<>
 
 # Traceability links
 
-<Description of this section>
+This section represents relationship between requirements and other project artifacts such as class diagram, Use case diagram and activity diagram.
 
 ## Use Case Diagram Traceability
 
 | Artifact ID | Artifact Name | Requirement ID |
 | :-------------: | :----------: | :----------: |
-| UseCase1 | Move Player | FR5 |
-| … | … | … |
+|1| [Sign In/Login](https://github.com/thotave/GVSU-CIS641-Vikings/blob/master/artifacts/User%20Case%20diagrams.pdf) | FR1,FR2, FR3, FR4, FR5|
+|2| [Registration](https://github.com/thotave/GVSU-CIS641-Vikings/blob/master/artifacts/User%20Case%20diagrams.pdf) | FR6,FR7, FR8, FR9, FR10|
+|3|[Use Case DEscription](https://github.com/thotave/GVSU-CIS641-Vikings/blob/master/artifacts/Use%20case%20Description.pdf)| |
 
 
 ## Class Diagram Traceability
 
 | Artifact Name | Requirement ID |
 | :-------------: |:----------: |
-| classPlayer| NFR3, FR5 |
-| … | … | … |
-
+|1| [User](https://github.com/thotave/GVSU-CIS641-Vikings/blob/master/artifacts/Class%20Diagram%20EMS.pdf)| FR19, FR20, FR21, FR22, NFR3, FR5 |
+|2| [Admin](https://github.com/thotave/GVSU-CIS641-Vikings/blob/master/artifacts/Class%20Diagram%20EMS.pdf)|  FR22,FR23, FR24, FR25 |
+|3| [Upload doc](https://github.com/thotave/GVSU-CIS641-Vikings/blob/master/artifacts/Class%20Diagram%20EMS.pdf)|  FR9,FR10, FR11, FR12, FR13 |
 
 ## Activity Diagram Traceability
 
@@ -145,8 +153,8 @@ Non-functional requirement section provides a user expectation and applies to wh
 
 | Artifact ID | Artifact Name | Requirement ID |
 | :-------------: | :----------: | :----------: |
-| <filename>| Handle Player Input | FR1-5, NFR2 |
-| … | … | … |
+|4| [Employee Signup](https://github.com/thotave/GVSU-CIS641-Vikings/blob/master/artifacts/Activity%20Diagrams.pdf) | FR1-5, NFR2 |
+|4| [Start Work](https://github.com/thotave/GVSU-CIS641-Vikings/blob/master/artifacts/Activity%20Diagrams.pdf) | FR14-FR18, NFR2 |
 
 
 # Software Artifacts
