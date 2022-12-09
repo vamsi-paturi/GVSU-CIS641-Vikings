@@ -9,7 +9,7 @@ Non-functional requirement section provides a user expectation and applies to wh
 
 ## Functional Requirements
 
-###Manage User Login:
+### Manage User Login:
 
 | ID | Requirement |
 | :-------------: | :----------: |
@@ -18,7 +18,7 @@ Non-functional requirement section provides a user expectation and applies to wh
 | FR3 | For sign-in user have to up the user detail (email and password)  |
 | FR4 | |
 
-###Sign Up/User Registration:
+### Sign Up/User Registration:
 
 | ID | Requirement|
 | :-------------: | :----------: |
@@ -28,7 +28,7 @@ Non-functional requirement section provides a user expectation and applies to wh
 | FR8 | Sign-up form inputs shall be validated when the user presses submit button |
 
 
-###Upload documents:
+### Upload documents:
 
 | ID | Requirement|
 | :-------------: | :----------: |
@@ -38,7 +38,7 @@ Non-functional requirement section provides a user expectation and applies to wh
 | FR12 | When user selects files and enters title then users will be ab le to upload the doc in the system. |
 | FR13| After validation document will be uploaded and success message will appear. |
 
-###Attendance Management:
+### Attendance Management:
 
 | ID | Requirement|
 | :-------------: | :----------: |
@@ -48,7 +48,7 @@ Non-functional requirement section provides a user expectation and applies to wh
 | FR17 | When user clicks on logout button the shift shall be ended|
 | FR18 | Number of hours worked shall be recorded after shift is ended|
 
-###Operational Requirements:
+### Operational Requirements:
 
 | ID | Requirement|
 | :-------------: | :----------: |
@@ -62,14 +62,58 @@ Non-functional requirement section provides a user expectation and applies to wh
 
 ## Non-Functional Requirements
 
-###<Name of Feature 1>
+### Quality:
 
 | ID | Requirement|
 | :-------------: | :----------: |
-| NFR1 | <Non-Functional Requirement 1> |
-| NFR2 | <Non-Functional Requirement 2> |
-| NFR3 | <Non-Functional Requirement 3> |
-| … | … | … |
+| NFR1 | All users shall have valid email address. |
+| NFR2 | All users should have document in pdf format |
+| NFR3 | The size of all documents should be small. |
+| NFR4 | User shallnot be able to edit the time of his/her shift. |
+| NFR5 | <Non-Functional Requirement 1> |
+| NFR6 | <Non-Functional Requirement 2> |
+
+### Availability:
+
+| ID | Requirement|
+| :-------------: | :----------: |
+| NFR7 | Application shall be up and running unitruptly until it is closed. |
+| NFR8 | User shall be able to access the login page within 5 second of application started |
+| NFR9 | All the documents saved by the user shall be stored in the backend of S# bucket |
+| NFR10 | After successful login, users email address, password, name , phone shall be stored in AsyncStorage. |
+
+
+### Operational Requirement:
+
+| ID | Requirement|
+| :-------------: | :----------: |
+| NFR11 | Application shall be installed or run on both operating systems -Windows, Linux |
+| NFR12 | The system front end UI shall be created using Angular JS |
+| NFR13 | System shall be build using Angular CLI |
+| NFR14 | Application Shall store user's data in MongoDb |
+| NFR15 | Application Shall store user's pdf documents in amazon S3 bucket|
+
+###  Security:
+
+| ID | Requirement|
+| :-------------: | :----------: |
+| NFR16 | User's personal data shall be stored in database in encrypted format. |
+| NFR17 | Unsuccessful login of user shall be recorded and audited. |
+| NFR18 | User data shall not be shared with any other party. |
+| NFR19 | The source coding shall follow secure coding practices. |
+| NFR20 | User's password shall be stored in encrypted format |
+| NFR21 | System shall not crashed after continuously running for more than 24 hours |
+
+
+### Performance:
+
+| ID | Requirement|
+| :-------------: | :----------: |
+| NFR22 |The system shall be capable of handling multiple users at a time. |
+| NFR23 | System shall upload the documents within 2 seconds |
+| NFR24 | System shall provide high performance to it's users|
+| NFR25 | System shall be provide all the functionalities without app getting freezed |
+| NFR26 | Backend server shall be running until system is closed. |
 
 # Change management plan
 
