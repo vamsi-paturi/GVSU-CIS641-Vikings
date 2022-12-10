@@ -32,7 +32,7 @@ app.use("/api/auth", auth);
 app.use("/api/documents", documents);
 app.use("/api/works", works);
 app.get("/", (req, res) => {
-  res.send("Bismillah");
+  res.send("");
 });
 require("./startup/prod")(app);
 // // const port=process.env.port || 3000;
