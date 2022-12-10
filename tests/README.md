@@ -4,9 +4,9 @@
 1. Clone the [git-repo](https://github.com/thotave/GVSU-CIS641-Vikings)
 2. Instructions to run the backend
     -Change directory to backend using the command in the Pwsh/Cmd terminal
-    -**$ cd src/EMS_Backend**
-        - (install node modules if haven't done already using $ npm install)
-    -Start backend connection using the command **$ nodemon index.js**
+    - **$ cd src/EMS_Backend**
+        - Install node modules if haven't done already using $ npm install
+    - Start backend connection using the command **$ nodemon index.js**
 3. Once the backend gets connected we need to start the front end.
     -Open an other Pwsh/cmd terminal in the vscode withour closing the previous one.
 4. Instructions to run the Frontend

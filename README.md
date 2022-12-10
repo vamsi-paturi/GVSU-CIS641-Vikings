@@ -15,5 +15,5 @@ For any organization, managing all the employees data and keeping a track of it 
 * [Software Requirement Specifications](https://github.com/thotave/GVSU-CIS641-Vikings/blob/master/docs/software_requirements_specification_final.md)
 
 ## Run Instructions
-1. For installation of EMS system [Click here to read the instructions](https://github.com/thotave/GVSU-CIS641-Vikings/tree/master/tests)
-2.
+* Use the guide to Install and run the EMS Application [Click here to read the instructions](https://github.com/thotave/GVSU-CIS641-Vikings/tree/master/tests)
+
