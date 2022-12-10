@@ -156,8 +156,8 @@ This section represents relationship between requirements and other project arti
 
 ## Class Diagram Traceability
 
-| Artifact Name | Requirement ID |
-| :-------------: |:----------: |:----------: |
+| Artifact ID | Artifact Name | Requirement ID |
+| :-------------: | :----------: | :------------: |
 |1| [User](https://github.com/thotave/GVSU-CIS641-Vikings/blob/master/artifacts/Class%20Diagram%20EMS.pdf) | FR19, FR20, FR21, FR22, NFR3, FR5 |
 |2| [Admin](https://github.com/thotave/GVSU-CIS641-Vikings/blob/master/artifacts/Class%20Diagram%20EMS.pdf) |  FR22, FR23, FR24, FR25 |
 |3| [Upload doc](https://github.com/thotave/GVSU-CIS641-Vikings/blob/master/artifacts/Class%20Diagram%20EMS.pdf) |  FR9, FR10, FR11, FR12, FR13 |
