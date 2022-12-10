@@ -117,14 +117,29 @@ Non-functional requirement section provides a user expectation and applies to wh
 
 # Change management plan
 
-<Description of what this section is>
-<>
-## How will you train people to use it?
-  <> 
-## How will you ensure it integrates within their ecosystem / software?
-<>
-##How will you ensure that it any discovered issues are resolved?
-<>
+This section will describe a change management plan for Employee Management System. It will focus on training users, platform availability, performance and issue handling process.
+
+## How will you train people to use EMS system?
+1. ...
+2.  ... 
+3.  ...
+4.  
+
+
+## How Employee Management system will you ensure it integrates within their ecosystem / software?
+1. ... 
+2.  ...
+3.   ...
+4.  ...
+5.  ...
+6.  ...
+
+
+## How Employee Management system will you ensure that it any discovered issues are resolved?
+1. ... 
+2.  ... 
+3.  ...
+4.  ...
 
 # Traceability links
 
@@ -161,5 +176,10 @@ This section represents relationship between requirements and other project arti
 
 <Describe the purpose of this section>
 
-*[I am a link](to_some_file.pdf)
-
+1. [Employee interface, HR interface - Use case diagram combined](https://github.com/thotave/GVSU-CIS641-Vikings/blob/master/artifacts/User%20Case%20diagrams.pdf)
+2. [Use case description](https://github.com/thotave/GVSU-CIS641-Vikings/blob/master/artifacts/Use%20case%20Description.pdf)
+3. [Sign up, registration - Activity Diagram](https://github.com/thotave/GVSU-CIS641-Vikings/blob/master/artifacts/Activity%20Diagrams.pdf)
+4. [Start wprk - Activity diagram](https://github.com/thotave/GVSU-CIS641-Vikings/blob/master/artifacts/Activity%20Diagrams.pdf)
+5. [EMS Class diagram](https://github.com/thotave/GVSU-CIS641-Vikings/blob/master/artifacts/Class%20Diagram%20EMS.pdf)
+6. [EMS Class diagram description](https://github.com/thotave/GVSU-CIS641-Vikings/blob/master/artifacts/Class%20diagram%20description.docx)
+7. [EMS Sequence diagram](https://github.com/thotave/GVSU-CIS641-Vikings/blob/master/artifacts/Employee-Management-System-Sequence-Diagram.webp)
