@@ -148,7 +148,7 @@ This section represents relationship between requirements and other project arti
 ## Use Case Diagram Traceability
 
 | Artifact ID | Artifact Name | Requirement ID |
-| :-------------: | :----------: | :----------: |
+| :-------------: | :----------: | :------------: |
 |1| [Sign In/Login](https://github.com/thotave/GVSU-CIS641-Vikings/blob/master/artifacts/User%20Case%20diagrams.pdf) | FR1,FR2, FR3, FR4, FR5|
 |2| [Registration](https://github.com/thotave/GVSU-CIS641-Vikings/blob/master/artifacts/User%20Case%20diagrams.pdf) | FR6,FR7, FR8, FR9, FR10|
 |3|[Use Case DEscription](https://github.com/thotave/GVSU-CIS641-Vikings/blob/master/artifacts/Use%20case%20Description.pdf) | NFR7, NFR10 |
@@ -157,10 +157,10 @@ This section represents relationship between requirements and other project arti
 ## Class Diagram Traceability
 
 | Artifact Name | Requirement ID |
-| :-------------: |:----------: |
+| :-------------: |:----------: |:----------: |
 |1| [User](https://github.com/thotave/GVSU-CIS641-Vikings/blob/master/artifacts/Class%20Diagram%20EMS.pdf) | FR19, FR20, FR21, FR22, NFR3, FR5 |
 |2| [Admin](https://github.com/thotave/GVSU-CIS641-Vikings/blob/master/artifacts/Class%20Diagram%20EMS.pdf) |  FR22, FR23, FR24, FR25 |
-|3| [Upload doc](https://github.com/thotave/GVSU-CIS641-Vikings/blob/master/artifacts/Class%20Diagram%20EMS.pdf) |  FR9,FR10, FR11, FR12, FR13 |
+|3| [Upload doc](https://github.com/thotave/GVSU-CIS641-Vikings/blob/master/artifacts/Class%20Diagram%20EMS.pdf) |  FR9, FR10, FR11, FR12, FR13 |
 
 ## Activity Diagram Traceability
 
