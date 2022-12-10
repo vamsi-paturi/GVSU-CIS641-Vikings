@@ -11,7 +11,7 @@ const Multer = require("multer");
 var multerS3 = require("multer-s3");
 
 var s3 = new aws.S3({
-  accessKeyId: "AKIASWQCFQAOOEMHEJ6V",
+  accessKeyId: "Vaishnavi",
   secretAccessKey: "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",
 });
 const storage = Multer.diskStorage({
