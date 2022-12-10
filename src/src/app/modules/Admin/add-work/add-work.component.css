@@ -1,0 +1,194 @@
+i {
+    color: #96e1ff;
+}
+.my-btn {
+    border: 1px solid #f1f1f1;
+    background: #fff;
+   width: auto;
+    font-weight: normal;
+
+}
+
+.my-btn:hover {
+    background-color: #96e1ff !important;
+    color: white !important;
+}
+
+.my-btn-selected {
+    background-color: #96e1ff !important;
+    color: white !important;
+}
+
+.card1 {
+    border: 1px solid #f1f1f1;
+    background-color: white;
+    margin: 0;
+    align-items: center;
+    text-align: center;
+    padding: 0px !important;
+    width: 20% !important;
+}
+
+.card1-title {
+    color: #fff;
+    font-size: 15px;
+    margin: 0px;
+    background-color: #fff;
+    border-bottom: 1px solid rgb(241, 241, 241);
+    padding: 10px 0px;
+    background-color: #96e1ff;
+    width: 100%;
+}
+
+.current-data {
+    background-color: white;
+    font-size: 24px;
+    font-weight: bolder;
+    margin: 15px 0px;
+    width: 100%;
+}
+
+.previous-data {
+    border-top: 1px solid rgb(241, 241, 241);
+    background-color: white;
+    font-size: 12px;
+    margin: 0px;
+    font-weight: bold;
+    padding: 5px 0px;
+    width: 100%;
+}
+
+.card-header {
+    padding: 0.25rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #96e1ff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    font-size: 12px;
+    border-left: none;
+    border-right: none;
+    color: white;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.25rem 1.25rem;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    font-size: 12px;
+    border-left: none;
+    border-right: none;
+}
+
+.booking-no {
+    color: cornflowerblue;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.divChart {
+    display: block;
+    height: 300px !important;
+    width: 300px !important;
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+    /*change color of label*/
+    color: #96e1ff !important;
+}
+
+::ng-deep.mat-form-field-underline {
+    /*change color of underline*/
+    background-color: #96e1ff !important;
+}
+
+.mat-form-field-underline {
+    /*change color of underline*/
+    background-color: #96e1ff !important;
+}
+
+::ng-deep.mat-form-field-ripple {
+    /*change color of underline when focused*/
+    background-color: #96e1ff !important;
+    ;
+}
+
+::ng-deep datepicker-value-example .mat-form-field-label {
+    color: #96e1ff !important;
+}
+
+::ng-deep .mat-datepicker-toggle {
+    color: #96e1ff !important;
+}
+
+::ng-deep .mat-form-field-underline {
+    background: #96e1ff !important;
+}
+
+
+::ng-deep .mat-focused .mat-form-field-label {
+    /*change color of label*/
+    color: #96e1ff !important;
+}
+
+::ng-deep.mat-form-field-underline {
+    /*change color of underline*/
+    background-color: #96e1ff !important;
+}
+
+::ng-deep.mat-form-field-ripple {
+    /*change color of underline when focused*/
+    background-color: #96e1ff !important;
+    ;
+}
+
+::ng-deep .mat-form-field-label {
+    /*change color of label*/
+    color: #96e1ff !important;
+}
+
+::mat-datepicker-toggle {
+    color: #96e1ff !important;
+}
+
+
+.ng-autocomplete {
+    font-size: 14px;
+    margin-top: 1px;
+    outline: 0;
+    background-color: #fff;
+    color: rgba(0, 0, 0, .87);
+    width: 100%;
+    padding: 0px;
+    line-height: 40px;
+    height: 100%;
+
+    padding: 0px;
+    margin-bottom: 0px;
+
+}
+
+.ng-autocomplete input {
+    height: 50px;
+}
+
+.card-md {
+    overflow: scroll;
+    height: 2% !important;
+}
+
+.search-header {
+
+    text-decoration: none !important;
+    cursor: text !important;
+    background-color: #96e1ff !important;
+    color: white !important;
+}
+
+.cc-white {
+    color: white;
+}
+
+.gm-style-iw+div {
+    display: none !important;
+}

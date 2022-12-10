@@ -1,0 +1,106 @@
+<header
+  class="fixed-top"
+  style="background-color: white; margin-bottom: 200px !important"
+>
+  <section class="top-bar-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 offset-1">
+          <div class="col-wrapper mt-4 mb-4">
+            <h2>Add Work</h2>
+          </div>
+        </div>
+        <!-- <div class="col-md-3">
+          <div class="col-wrapper mt-4 mb-4 text-right">
+            <a class="btn btn-primary" [routerLink]="['/admin/accounts-add']"
+              >Add Invoice</a
+            >
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="col-wrapper mt-4 mb-4 g-3">
+            <div class="search-wrapper">
+              <form action="" method="GET">
+                <div class="input-group">
+                  <div class="input-group-text">
+                    <i class="fa fa-search"></i>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control form-control-search"
+                    [(ngModel)]="searchText"
+                    id="query"
+                    name="query"
+                    placeholder="Search"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+</header>
+
+<div class="container-z">
+  <div class="row" style="margin-top: 100px">
+    <div class="col-lg-2 col-md-3">
+      <app-sidebar></app-sidebar>
+    </div>
+    <div class="col-lg-10 col-md-9 zia" style="background-color: white">
+      <!-- <router-outlet></router-outlet> -->
+
+      <div class="main-content-wrapper">
+        <div class="col-md-8 text-center p-0">
+          <div class="col-wrapper mt-4 pt-1 text-left">
+            <div class="btn-group" role="group">
+              <button
+                type="button"
+                (click)="selectReportType(1)"
+                class="btn my-btn"
+              >
+                Start Shift
+              </button>
+              <button
+                type="button"
+                (click)="selectReportType(2)"
+                class="btn my-btn"
+              >
+                Start Break
+              </button>
+              <button
+                type="button"
+                (click)="selectReportType(3)"
+                class="btn my-btn"
+              >
+                End Break
+              </button>
+              <button
+                type="button"
+                (click)="selectReportType(4)"
+                class="btn my-btn"
+              >
+                End Shift
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="modal fade" id="confirmdelete" tabindex="-1" role="dialog" aria-labelledby="confirmdeleteLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        Are you sure you want to delete this?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="deltedata()">Yes</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+</div>

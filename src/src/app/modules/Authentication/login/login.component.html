@@ -1,0 +1,143 @@
+<div class="login-block">
+  <!-- Header -->
+
+  <!-- Page content -->
+  <div class="container mt-5 pb-5">
+    <div class="text-center">
+      <div class="">
+        <div class="card bg-secondary border-0 mb-0">
+          <div class="card-body px-lg-5 rounded shadow my-card py-lg-5 pt-0">
+            <div class="row justify-content-center">
+              <div class="col-lg-5 col-md-7">
+                <div class="text-center text-muted mb-4">
+                  <h1 style="margin-bottom: 40%">Enployee Management System</h1>
+                </div>
+                <form
+                  role="form"
+                  [formGroup]="signinForm"
+                  method="POST"
+                  (ngSubmit)="authenticate1()"
+                >
+                  <div class="form-group mb-3">
+                    <input
+                      class="form-control my-text"
+                      autocomplete="false"
+                      placeholder="Employee Number"
+                      formControlName="email"
+                      [ngClass]="{ 'is-invalid': submitted && f.email.errors }"
+                      type="text"
+                    />
+                    <div
+                      *ngIf="submitted && f.email.errors"
+                      class="invalid-feedback order-last"
+                    >
+                      <div *ngIf="f.email.errors.required">
+                        Please enter email address
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group input-group-alternative">
+                      <input
+                        [type]="show_password ? 'text' : 'password'"
+                        class="form-control my-text"
+                        placeholder="Password"
+                        formControlName="password"
+                        [ngClass]="{
+                          'is-invalid': submitted && f.password.errors
+                        }"
+                      />
+                      <div class="input-group-append">
+                        <span
+                          class="input-group-text my-text"
+                          (click)="togglePasswordView()"
+                          style="color: #96e1ff"
+                        >
+                          <i
+                            [ngClass]="
+                              show_password ? 'far fa-eye-slash' : 'far fa-eye'
+                            "
+                          ></i>
+                        </span>
+                      </div>
+                      <div
+                        *ngIf="submitted && f.password.errors"
+                        class="invalid-feedback"
+                      >
+                        <div *ngIf="f.password.errors.required">
+                          Please enter password
+                        </div>
+                        <div *ngIf="f.password.errors.minlength">
+                          Password must be at 8 to 16 characters in length
+                        </div>
+                        <div *ngIf="f.password.errors.pattern">
+                          The password should have minimum 6 characters with at
+                          least 1 capital letter, 1 lower case letter, 1 special
+                          character and 1 number
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="text-center">
+                    <img
+                      *ngIf="loader"
+                      style="width: 50px; height: 50px"
+                      src="../../../../assets/img/ripple.gif"
+                    />
+                    <div class="row mt-3">
+                      <!-- <div class="col-6 text-left">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input my-checkbox"
+                            type="checkbox"
+                            [checked]="Isremember"
+                            value=""
+                            id="flexCheckDefault"
+                            name="rememberme"
+                            #rememberme
+                            (click)="rememberMe(rememberme)"
+                          />
+                          <label
+                            class="form-check-label checkmark"
+                            for="flexCheckDefault"
+                          >
+                            <small>Remember me</small>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-6 text-right">
+                        <a
+                          class="text-light"
+                          href="javascript:"
+                          (click)="forgetpassword()"
+                          ><small>Forgot password?</small></a
+                        >
+                      </div> -->
+                      <!-- <div class="col-6 text-right">
+                  <a href="#" class="text-light"><small>Create new account</small></a>
+                </div> -->
+                    </div>
+                    <button
+                      type="submit"
+                      class="btn btn-primary btn-login my-4"
+                    >
+                      Sign in
+                    </button>
+                    <button
+                      type="submit"
+                      class="btn btn-outline-dark btn-login"
+                      (click)="register()"
+                    >
+                      Register
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

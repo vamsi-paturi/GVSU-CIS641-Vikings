@@ -1,0 +1,43 @@
+.m-w {
+    min-width: 100%;
+}
+
+.customer-side {
+    border: 5px solid #dca202 !important;
+    padding: 2%;
+}
+
+.my-border {
+    border: 2px solid;
+    border-color: #dca202;
+}
+
+.my-i {
+    font-size: 200px;
+    color: #dca202;
+    text-align: center;
+}
+
+.c-widh {
+    width: 100%;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+pdf-viewer {
+    display: block;
+    height: 275px !important;
+    width: 275px !important;
+    overflow-y: hidden !important;
+    ;
+    overflow-x: hidden !important;
+}

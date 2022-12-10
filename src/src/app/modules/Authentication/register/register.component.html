@@ -1,0 +1,227 @@
+<div class="login-block">
+  <!-- Header -->
+  <div class="header py-6 py-lg-5 pt-lg-9">
+    <div class="container">
+      <div class="header-body text-center mb-7">
+        <div class="row justify-content-center">
+          <div class="col-xl-5 col-lg-6 col-md-8 px-5">
+            <!-- <h1 class="text-white">Welcome!</h1> -->
+            <!-- <p class="text-lead text-white">Admin Panel Login.</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="separator separator-bottom separator-skew zindex-100">
+          <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1"
+            xmlns="http://www.w3.org/2000/svg">
+            <polygon class="fill-default" points="2560 0 2560 100 0 100"></polygon>
+          </svg>
+        </div> -->
+  </div>
+  <!-- Page content -->
+  <div class="container mt--8 pb-5">
+    <div class="justify-content-center">
+      <div class="">
+        <div class="card bg-secondary border-0 mb-0">
+          <div class="card-body px-lg-5 rounded shadow my-card py-lg-5">
+            <div class="text-center text-muted mb-5">
+              <h1>Register Employee</h1>
+            </div>
+            <form role="form" [formGroup]="signinForm" method="POST">
+              <div class="row">
+                <div class="col-md-4 col-lg4">
+                  <div class="form-group mb-1 mt-2">
+                    <input
+                      class="form-control my-text"
+                      autocomplete="false"
+                      placeholder="Name"
+                      formControlName="name"
+                      [ngClass]="{ 'is-invalid': submitted && f.name.errors }"
+                      type="text"
+                    />
+                    <div
+                      *ngIf="submitted && f.name.errors"
+                      class="invalid-feedback order-last"
+                    >
+                      <div *ngIf="f.name.errors.required">
+                        Please enter name
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg4">
+                  <div class="form-group mb-1 mt-2">
+                    <input
+                      class="form-control my-text"
+                      autocomplete="false"
+                      placeholder="Address"
+                      formControlName="address"
+                      [ngClass]="{
+                        'is-invalid': submitted && f.address.errors
+                      }"
+                      type="text"
+                    />
+                    <div
+                      *ngIf="submitted && f.address.errors"
+                      class="invalid-feedback order-last"
+                    >
+                      <div *ngIf="f.address.errors.required">
+                        Please enter email address
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg4">
+                  <div class="form-group mb-1 mt-2">
+                    <input
+                      class="form-control my-text"
+                      autocomplete="false"
+                      placeholder="Phone Number"
+                      formControlName="phoneNumber"
+                      [ngClass]="{
+                        'is-invalid': submitted && f.phoneNumber.errors
+                      }"
+                      type="text"
+                    />
+                    <div
+                      *ngIf="submitted && f.phoneNumber.errors"
+                      class="invalid-feedback order-last"
+                    >
+                      <div *ngIf="f.phoneNumber.errors.required">
+                        Please enter phone number
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 col-lg4">
+                  <div class="form-group mb-1 mt-2">
+                    <input
+                      class="form-control my-text"
+                      autocomplete="false"
+                      placeholder="Email"
+                      formControlName="email"
+                      [ngClass]="{ 'is-invalid': submitted && f.email.errors }"
+                      type="email"
+                    />
+                    <div
+                      *ngIf="submitted && f.email.errors"
+                      class="invalid-feedback order-last"
+                    >
+                      <div *ngIf="f.email.errors.email">
+                        Invalid email address
+                      </div>
+                      <div *ngIf="f.email.errors.required">
+                        Please enter email address
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg4">
+                  <div class="form-group mb-1 mt-2">
+                    <input
+                      class="form-control my-text"
+                      autocomplete="false"
+                      placeholder="Password"
+                      formControlName="password"
+                      [ngClass]="{
+                        'is-invalid': submitted && f.password.errors
+                      }"
+                      type="password"
+                    />
+                    <div
+                      *ngIf="submitted && f.password.errors"
+                      class="invalid-feedback order-last"
+                    >
+                      <div *ngIf="f.password.errors.required">
+                        Please enter password
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg4">
+                  <div class="form-group mb-1 mt-2">
+                    <input
+                      class="form-control my-text"
+                      autocomplete="false"
+                      placeholder="Confirm Password"
+                      formControlName="confirmPassword"
+                      [ngClass]="{
+                        'is-invalid': submitted && f.confirmPassword.errors
+                      }"
+                      type="password"
+                    />
+                    <div
+                      *ngIf="submitted && f.confirmPassword.errors"
+                      class="invalid-feedback order-last"
+                    >
+                      <div *ngIf="f.confirmPassword.errors.required">
+                        Please enter confirm password
+                      </div>
+                      <div *ngIf="f.confirmPassword.errors.mustMatch">
+                        Password and confirm not match
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 col-lg4">
+                  <div class="form-group mb-1 mt-2">
+                    <input
+                      class="form-control my-text"
+                      autocomplete="false"
+                      placeholder="Date of Birth"
+                      formControlName="dob"
+                      [ngClass]="{ 'is-invalid': submitted && f.dob.errors }"
+                      type="date"
+                    />
+                    <div
+                      *ngIf="submitted && f.dob.errors"
+                      class="invalid-feedback order-last"
+                    >
+                      <div *ngIf="f.dob.errors.required">Please enter dob</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row"></div>
+              <div class="row">
+                <div class="offset-4 col-4">
+                  <div class="text-center">
+                    <img
+                      *ngIf="loader"
+                      style="width: 50px; height: 50px"
+                      src="../../../../assets/img/ripple.gif"
+                    />
+                    <div class="row mt-3">
+                      <!-- <div class="col-6 text-right">
+                  <a href="#" class="text-light"><small>Create new account</small></a>
+                </div> -->
+                    </div>
+                    <button
+                      type="submit"
+                      class="btn btn-primary btn-login my-4"
+                      style="margin-bottom: 10px !important"
+                      (click)="authenticate1()"
+                    >
+                      Next
+                    </button>
+                    <button
+                      type="submit"
+                      (click)="Back()"
+                      class="btn btn-outline-dark btn-login"
+                    >
+                      Back
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

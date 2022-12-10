@@ -1,0 +1,179 @@
+<header
+  class="fixed-top"
+  style="background-color: white; margin-bottom: 200px !important"
+>
+  <section class="top-bar-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 offset-1">
+          <div class="col-wrapper mt-4 mb-4 text-left">
+            <h2>Document List</h2>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="col-wrapper mt-4 mb-4 text-right">
+            <a class="btn btn-primary" (click)="addNewDoc()"
+              >Add New document</a
+            >
+          </div>
+        </div>
+        <!-- <div class="col-md-3">
+          <div class="col-wrapper mt-4 mb-4 text-right">
+            <a class="btn btn-primary" [routerLink]="['/admin/employee-add']"
+              >Add New Customer</a
+            >
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="col-wrapper mt-4 mb-4 g-3">
+            <div class="search-wrapper">
+              <form action="" method="GET">
+                <div class="input-group">
+                  <div class="input-group-text">
+                    <i class="fa fa-search"></i>
+                  </div>
+                  <input
+                    type="text"
+                    [(ngModel)]="searchText"
+                    class="form-control form-control-search"
+                    id="query"
+                    name="query"
+                    placeholder="Search"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+</header>
+
+<div class="container-z">
+  <div class="row" style="margin-top: 100px">
+    <div class="col-lg-2 col-md-3">
+      <app-sidebar></app-sidebar>
+    </div>
+    <div
+      class="col-lg-10 col-md-9 zia"
+      style="background-color: white"
+      [ngStyle]="{ 'max-height': tbody }"
+    >
+      <!-- <router-outlet></router-outlet> -->
+
+      <div class="main-content-wrapper">
+        <p *ngIf="nodata" class="lead">No Document Added Yet.</p>
+        <div *ngIf="!nodata" class="table-responsive">
+          <table
+            *ngIf="!loader"
+            class="table align-items-center table-flush table-fixed"
+          >
+            <thead>
+              <tr>
+                <th scope="col" style="min-width: 140px !important">
+                  Document Id
+                </th>
+                <th scope="col" style="min-width: 140px !important">
+                  Employee
+                </th>
+                <th scope="col" style="min-width: 140px !important">
+                  Document Tittle
+                </th>
+                <th scope="col" style="min-width: 140px !important">
+                  Description
+                </th>
+                <th scope="col" style="min-width: 140px !important">
+                  Operation
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                *ngFor="
+                  let item of items
+                    | filter : searchText
+                    | paginate : { itemsPerPage: 10, currentPage: p };
+                  let i = index
+                "
+              >
+                <td style="min-width: 140px">{{ i }}</td>
+                <td style="min-width: 140px">{{ item.userid.name }}</td>
+                <td style="min-width: 140px">{{ item.tittle }}</td>
+                <td style="min-width: 140px">{{ item.description }}</td>
+                <td style="min-width: 140px">
+                  <div class="btn-group">
+                    <button
+                      [disabled]="item.address == 'Approved'"
+                      type="button"
+                      class="btn btn-primary my-btn-primary dropdown-toggle"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <i class="fas fa-ellipsis-v my-i"></i>
+                    </button>
+                    <div class="dropdown-menu menu-div">
+                      <a
+                        class="btn btn-primary my-btn mb-1"
+                        (click)="goToLink(item.path)"
+                        >Download</a
+                      >
+                      <input
+                        class="btn-primary my-btn"
+                        type="button"
+                        style="height: 32px; margin-bottom: 0px"
+                        name="delete"
+                        data-target="#confirmdelete"
+                        value="Delete"
+                        data-toggle="modal"
+                        (click)="saveid(item._id)"
+                      />
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="text-center">
+          <pagination-controls
+            *ngIf="!nodata"
+            (pageChange)="p = $event"
+            previousLabel=""
+            nextLabel=""
+          ></pagination-controls>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="modal fade"
+    id="confirmdelete"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="confirmdeleteLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">Are you sure you want to delete this?</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            No
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-dismiss="modal"
+            (click)="deltedata()"
+          >
+            Yes
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,92 @@
+<!-- <div class="col-md-2"> -->
+<div
+  class="left-sidebar-wrapper fixme outer"
+  [ngStyle]="{ 'min-height': tbody, 'max-height': tbody }"
+>
+  <div class="site-branding">
+    <h1 style="text-align: center">EMS</h1>
+  </div>
+  <ul class="nav flex-column">
+    <!-- <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" [routerLink]="'javascript:;'" (click)="redirectTo('admin/dashboard')" [routerLink]="['/admin/dashboard']">Request</a>
+        </li> -->
+    <li class="nav-item">
+      <a
+        *ngIf="this.isAdmin"
+        class="nav-link"
+        routerLinkActive="active"
+        [routerLink]="'javascript:;'"
+        (click)="redirectTo('admin/employee-list')"
+        [routerLink]="['/admin/employee-list']"
+        >Employee</a
+      >
+      <a
+        *ngIf="!this.isAdmin"
+        class="nav-link"
+        routerLinkActive="active"
+        [routerLink]="'javascript:;'"
+        (click)="redirectTo('admin/add-work')"
+        [routerLink]="['/admin/add-work']"
+        >Work List</a
+      >
+      <a
+        class="nav-link"
+        routerLinkActive="active"
+        [routerLink]="'javascript:;'"
+        name="info"
+        (click)="userinfo()"
+        >Update Info</a
+      >
+      <a
+      *ngIf="!this.isAdmin"
+        class="nav-link"
+        name="docs"
+        routerLinkActive="active"
+        [routerLink]="'javascript:;'"
+        (click)="userDocs()"
+        >Documents</a
+      >
+    </li>
+
+    <li class="nav-item copyright">
+      <a
+        class="nav-link"
+        routerLinkActive="active"
+        data-target="#confirmlogout"
+        href="javascript:;"
+        value="Delete"
+        data-toggle="modal"
+        >Sign Out</a
+      >
+    </li>
+  </ul>
+
+  <!-- <a class="logout" href="#">Logout</a> -->
+</div>
+<div
+  class="modal fade"
+  id="confirmlogout"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="confirmlogoutLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">Are you sure you want to Logout?</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          No
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-dismiss="modal"
+          (click)="logout()"
+        >
+          Yes
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

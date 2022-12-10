@@ -1,0 +1,164 @@
+<header
+  class="fixed-top"
+  style="background-color: white; margin-bottom: 200px !important"
+>
+  <section class="top-bar-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 offset-1">
+          <div class="col-wrapper mt-4 mb-4 text-left">
+            <h2>Work History</h2>
+          </div>
+        </div>
+        <!-- <div class="col-md-3">
+          <div class="col-wrapper mt-4 mb-4 text-right">
+            <a class="btn btn-primary" [routerLink]="['/admin/employee-add']"
+              >Add New Customer</a
+            >
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="col-wrapper mt-4 mb-4 g-3">
+            <div class="search-wrapper">
+              <form action="" method="GET">
+                <div class="input-group">
+                  <div class="input-group-text">
+                    <i class="fa fa-search"></i>
+                  </div>
+                  <input
+                    type="text"
+                    [(ngModel)]="searchText"
+                    class="form-control form-control-search"
+                    id="query"
+                    name="query"
+                    placeholder="Search"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+</header>
+
+<div class="container-z">
+  <div class="row" style="margin-top: 100px">
+    <div class="col-lg-2 col-md-3">
+      <app-sidebar></app-sidebar>
+    </div>
+    <div
+      class="col-lg-10 col-md-9 zia"
+      style="background-color: white"
+      [ngStyle]="{ 'max-height': tbody }"
+    >
+      <!-- <router-outlet></router-outlet> -->
+
+      <div class="main-content-wrapper">
+        <p *ngIf="nodata" class="lead">No Work History Added Yet.</p>
+        <div *ngIf="!nodata" class="table-responsive">
+          <table
+            *ngIf="!loader"
+            class="table align-items-center table-flush table-fixed"
+          >
+            <thead>
+              <tr>
+                <th scope="col" style="min-width: 140px !important">Id</th>
+                <th scope="col" style="min-width: 310px !important">Date</th>
+                <th scope="col" style="min-width: 150px !important">
+                  Check-in time
+                </th>
+                <th scope="col" style="min-width: 150px !important">
+                  Check-out time
+                </th>
+                <th scope="col" style="min-width: 150px !important">
+                  Working Hrs
+                </th>
+                <th scope="col" style="min-width: 150px !important">
+                  Break Hrs
+                </th>
+                <th scope="col" style="min-width: 150px !important">
+                  Total Hrs
+                </th>
+                <th scope="col" style="min-width: 150px !important">
+                  Amount Earned
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                *ngFor="
+                  let item of items
+                    | filter : searchText
+                    | paginate : { itemsPerPage: 10, currentPage: p };
+                  let i = index
+                "
+              >
+                <td style="min-width: 140px">{{ i + 1 }}</td>
+                <td style="min-width: 140px">
+                  {{ item.date | date : "dd/MM/yyyy" }}
+                </td>
+                <td style="min-width: 140px">
+                  {{ item.startTime | date : "shortTime" }}
+                </td>
+                <td style="min-width: 140px">
+                  {{ item.endTime | date : "shortTime" }}
+                </td>
+                <td style="min-width: 140px">
+                  {{ item.workingHours.toFixed(2) }}
+                </td>
+                <td style="min-width: 140px">
+                  {{ item.brakHours.toFixed(2) }}
+                </td>
+                <td style="min-width: 140px">
+                  {{ (item.workingHours + item.brakHours).toFixed(2) }}
+                </td>
+                <td style="min-width: 140px">
+                  {{ (item.workingHours * 10).toFixed(2) }}$
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="text-center">
+          <pagination-controls
+            *ngIf="!nodata"
+            (pageChange)="p = $event"
+            previousLabel=""
+            nextLabel=""
+          ></pagination-controls>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="modal fade"
+    id="confirmdelete"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="confirmdeleteLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">Are you sure you want to delete this?</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            No
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-dismiss="modal"
+            (click)="deltedata()"
+          >
+            Yes
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

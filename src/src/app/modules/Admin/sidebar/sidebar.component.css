@@ -1,0 +1,17 @@
+
+.copyright {
+    position: absolute;
+    bottom: 0;
+   
+}
+li > a {
+    margin-top: 2px;
+}
+
+
+
+.site-branding {
+    padding-bottom: 0px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #c5ccd2;
+}
