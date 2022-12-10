@@ -12,8 +12,8 @@ For any organization, managing all the employees data and keeping a track of it 
 * [Meetings](https://github.com/thotave/GVSU-CIS641-Vikings/tree/master/meetings)
 * [Project Proposal](https://github.com/thotave/GVSU-CIS641-Vikings/blob/master/docs/proposal-template.md)
 * [Project Artifacts](https://github.com/thotave/GVSU-CIS641-Vikings/tree/master/artifacts)
-* [Software Requirement Specifications](https://github.com/thotave/GVSU-CIS641-Vikings/blob/master/docs/software_requirements_specification.md)
+* [Software Requirement Specifications](https://github.com/thotave/GVSU-CIS641-Vikings/blob/master/docs/software_requirements_specification_final.md)
 
 ## Run Instructions
-
-
+1. Clone the git repository to your git and [ click here](https://github.com/thotave/GVSU-CIS641-Vikings/tree/master/tests) for the installation guide.
+2. 
